@@ -3,7 +3,7 @@
 A webapp dashboard for visualizing OpenClaw agent semantic memory, inference analytics, session logs, and coordination patterns.
 
 ## Stack
-- Next.js 16 + TypeScript + Tailwind v4
+- Next.js 15 + TypeScript + Tailwind v4
 - GitHub Pages (static export)
 - pnpm
 
