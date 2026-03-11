@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "exportedAt": "2026-03-09T14:00:00.000Z",
+  "records": [
+    {
+      "id": "mem_001",
+      "agentRole": "pi",
+      "content": "Discussed project architecture with the team. Decided to use Next.js 15 with static export for GitHub Pages deployment. The agent-memory-dashboard will aggregate OpenClaw agent state.",
+      "timestamp": "2026-03-08T10:30:00.000Z",
+      "source": "session",
+      "metadata": {
+        "sessionId": "sess_abc123",
+        "tags": ["architecture", "nextjs", "github-pages"]
+      }
+    },
+    {
+      "id": "mem_002",
+      "agentRole": "backend-engineer",
+      "content": "Implemented the Memory Explorer page. Features: full-text search, agent/source filters, expandable cards. Uses static JSON export from GitHub Actions.",
+      "timestamp": "2026-03-08T14:20:00.000Z",
+      "source": "user",
+      "metadata": {
+        "tags": ["feature", "memory-explorer", "typescript"]
+      }
+    },
+    {
+      "id": "mem_003",
+      "agentRole": "devops",
+      "content": "CI pipeline configured. Pages deployment working on push to issue-1-scaffold branch. Build time ~1.3s, static assets optimized.",
+      "timestamp": "2026-03-08T16:45:00.000Z",
+      "source": "cron",
+      "metadata": {
+        "cronJob": "github-pages-deploy",
+        "tags": ["ci-cd", "github-actions", "deployment"]
+      }
+    },
+    {
+      "id": "mem_004",
+      "agentRole": "frontend-engineer",
+      "content": "Design system established with Tailwind v4. Dark mode support via CSS variables. Sidebar navigation scaffold ready for all 4 dashboard sections.",
+      "timestamp": "2026-03-08T11:15:00.000Z",
+      "source": "session",
+      "metadata": {
+        "sessionId": "sess_def456",
+        "tags": ["ui", "tailwind", "design-system"]
+      }
+    },
+    {
+      "id": "mem_005",
+      "agentRole": "pi",
+      "content": "Sprint 2026-03-09 planned. Priority order: 1) Scaffold, 2) Memory Explorer, 3) Inference Analytics, 4) Session Timeline, 5) Sprint Board.",
+      "timestamp": "2026-03-09T09:00:00.000Z",
+      "source": "session",
+      "metadata": {
+        "sessionId": "sess_ghi789",
+        "tags": ["planning", "sprint", "priorities"]
+      }
+    },
+    {
+      "id": "mem_006",
+      "agentRole": "backend-engineer",
+      "content": "Added TypeScript types for memory export and client-side filtering utilities. Implemented fuzzy search on content and tags.",
+      "timestamp": "2026-03-09T13:45:00.000Z",
+      "source": "user",
+      "metadata": {
+        "toolName": "claude-code",
+        "tags": ["typescript", "filtering", "search"]
+      }
+    },
+    {
+      "id": "mem_007",
+      "agentRole": "data-engineer",
+      "content": "Data export schema defined: GitHub Actions will read OpenClaw SQLite stores and produce JSON for the dashboard.",
+      "timestamp": "2026-03-07T15:30:00.000Z",
+      "source": "session",
+      "metadata": {
+        "sessionId": "sess_jkl012",
+        "tags": ["data", "sqlite", "export"]
+      }
+    }
+  ]
+}

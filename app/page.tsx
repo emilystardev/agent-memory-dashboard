@@ -27,7 +27,7 @@ export default function HomePage() {
             Inference Analytics
           </a>
           <a
-            href="#memory-explorer"
+            href="/memory"
             className="block rounded-md px-3 py-2 text-sm font-medium hover:bg-accent"
           >
             Memory Explorer
