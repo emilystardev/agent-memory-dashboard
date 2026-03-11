@@ -1,12 +1,12 @@
 {
   "mcpServers": {
     "context7": {
-      "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "command": "node",
+      "args": ["/home/teamlead/.npm-global/lib/node_modules/@upstash/context7-mcp/dist/index.js"]
     },
     "github": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "command": "node",
+      "args": ["/home/teamlead/.npm-global/lib/node_modules/@modelcontextprotocol/server-github/dist/index.js"],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
       }
@@ -16,8 +16,8 @@
       "args": ["@playwright/mcp@latest", "--headless"]
     },
     "memory": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-memory"]
+      "command": "node",
+      "args": ["/home/teamlead/.npm-global/lib/node_modules/@modelcontextprotocol/server-memory/dist/index.js"]
     }
   }
 }
