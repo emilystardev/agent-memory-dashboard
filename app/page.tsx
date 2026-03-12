@@ -1,3 +1,17 @@
+'use client';
+
+import dynamic from 'next/dynamic';
+
+// Dynamically import to avoid SSR issues
+const SprintBoard = dynamic(() => import('@/app/components/SprintBoard'), {
+  loading: () => (
+    <div className="flex items-center justify-center py-12">
+      <div className="text-muted-foreground">Loading sprint board...</div>
+    </div>
+  ),
+  ssr: false,
+});
+
 export default function HomePage() {
   return (
     <div className="flex min-h-screen bg-background">
@@ -40,24 +54,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl space-y-12">
           {/* Sprint Board Section */}
           <section id="sprint-board" className="space-y-4">
-            <div className="border-b border-border pb-4">
-              <h2 className="text-2xl font-bold">Sprint Board</h2>
-              <p className="mt-2 text-muted-foreground">
-                Kanban board reading SPRINT.md + GitHub issues/PRs. Columns: Backlog, In Progress, In Review, Done.
-              </p>
-            </div>
-            <div className="grid grid-cols-4 gap-4">
-              {["Backlog", "In Progress", "In Review", "Done"].map((column) => (
-                <div key={column} className="rounded-lg border border-border p-4">
-                  <h3 className="mb-4 font-semibold">{column}</h3>
-                  <div className="space-y-2">
-                    <div className="rounded-md border border-border bg-muted/50 p-3 text-sm">
-                      <p className="text-muted-foreground">No cards yet</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <SprintBoard />
           </section>
 
           {/* Session Timeline Section */}

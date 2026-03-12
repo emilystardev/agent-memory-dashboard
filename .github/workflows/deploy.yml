@@ -39,6 +39,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Export sprint data
+        run: pnpm dlx tsx scripts/export-sprint-data.ts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Continue even if this step fails (API rate limits, no data yet, etc)
+        continue-on-error: true
+
       - name: Build
         run: pnpm build
         env:
